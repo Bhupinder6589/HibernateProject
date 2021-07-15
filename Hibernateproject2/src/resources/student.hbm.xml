@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name = "beans.Student" table="student007">
+<id name = "id" column="s_id">
+<generator class="custom_id_generator.CustomGenerator">
+<!-- <param name="sequence">autoincrement</param> -->
+</generator>
+</id>
+<property name="name" column="s_name"></property>
+<property name="email" column="s_email"></property>
+
+</class>
+</hibernate-mapping>
